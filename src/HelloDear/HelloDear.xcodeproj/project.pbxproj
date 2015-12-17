@@ -12,7 +12,7 @@
 		A319651B1C1DC6A700B0983F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A319651A1C1DC6A700B0983F /* LaunchScreen.storyboard */; };
 		A31965221C1DC9B400B0983F /* globo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A31965211C1DC9B400B0983F /* globo.jpg */; };
 		A31965241C1DCADE00B0983F /* MessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31965231C1DCADE00B0983F /* MessageDialog.swift */; };
-		A31965281C1DD69800B0983F /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31965271C1DD69800B0983F /* Sounds.swift */; };
+		A3DEE5691C22322E00689077 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEE5681C22322E00689077 /* Sounds.swift */; };
 		A3E48A891C1F860700BAAA4F /* main_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3E48A881C1F860700BAAA4F /* main_image.jpg */; };
 		A3E48A8D1C1F8C4E00BAAA4F /* her_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3E48A8C1C1F8C4E00BAAA4F /* her_icon.jpg */; };
 		A3E48A951C1F94A100BAAA4F /* briga.wav in Resources */ = {isa = PBXBuildFile; fileRef = A3E48A8E1C1F94A100BAAA4F /* briga.wav */; };
@@ -32,7 +32,7 @@
 		A319651A1C1DC6A700B0983F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31965211C1DC9B400B0983F /* globo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = globo.jpg; sourceTree = "<group>"; };
 		A31965231C1DCADE00B0983F /* MessageDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDialog.swift; sourceTree = "<group>"; };
-		A31965271C1DD69800B0983F /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sounds.swift; path = ../viewcontroller/Sounds.swift; sourceTree = "<group>"; };
+		A3DEE5681C22322E00689077 /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		A3E48A881C1F860700BAAA4F /* main_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_image.jpg; sourceTree = "<group>"; };
 		A3E48A8C1C1F8C4E00BAAA4F /* her_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = her_icon.jpg; sourceTree = "<group>"; };
 		A3E48A8E1C1F94A100BAAA4F /* briga.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = briga.wav; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		A319650F1C1DC52B00B0983F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				A31965271C1DD69800B0983F /* Sounds.swift */,
+				A3DEE5681C22322E00689077 /* Sounds.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 				A31965241C1DCADE00B0983F /* MessageDialog.swift in Sources */,
 				A31965151C1DC52B00B0983F /* ViewController.swift in Sources */,
 				A3F989271C1660C100697635 /* AppDelegate.swift in Sources */,
-				A31965281C1DD69800B0983F /* Sounds.swift in Sources */,
+				A3DEE5691C22322E00689077 /* Sounds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
