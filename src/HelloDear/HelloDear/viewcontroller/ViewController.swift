@@ -18,12 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let imageFilePath = NSBundle.mainBundle().pathForResource("main_image", ofType: ".jpg") {
-            if let image = UIImage(named: imageFilePath) {
-                self.imageView!.image = image
-            }
-        }
+        loadImage()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,12 +26,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction
-    func playAudio() {
+    func executeAction() {
+        loadImage()
+        playSound()
+    }
+    
+    func loadImage() {
+        let randomImage = getRandomImage();
+        
+        if let imageFilePath = NSBundle.mainBundle().pathForResource(randomImage, ofType: ".jpg") {
+            if let image = UIImage(named: imageFilePath) {
+                self.imageView!.image = image
+            }
+        }
+    }
+    
+    func playSound() {
         if player != nil && player!.playing {
-            return;
+            return
         }
         
-        let randomSound = getRandomSound();
+        let randomSound = getRandomSound()
         
         print("random \(randomSound)")
         
@@ -54,9 +64,14 @@ class ViewController: UIViewController {
         }
     }
     
+    func getRandomImage() -> String {
+        let random = randomInt(0, max: 4)
+        return Images.getImageName(random)
+    }
+    
     func getRandomSound() -> String {
         let random = randomInt(0, max: 6)
-        return Sounds.getStringValue(random);
+        return Sounds.getStringValue(random)
     }
     
     func randomInt(min: Int, max: Int) -> Int {
